@@ -33,7 +33,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (target.closest('.icon-menu') || target.classList.contains('header__menu')) {
-            document.querySelector('.header').classList.toggle('open-menu');
+            header.classList.toggle('open-menu');
+            body.classList.toggle('lock-menu');
+        }
+
+        if (header?.classList.contains('open-menu') && !target.closest('.header')) {
+            header.classList.remove('open-menu');
+            body.classList.remove('lock-menu');
+        }
+
+        if (target.matches('.header__search-toggler')) {
+            header.classList.add('open-mobile-search');
+            document.querySelector('.search__input').focus()
         }
 
 
@@ -56,6 +67,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     });
+
+    document.querySelector('.search__input')?.addEventListener('blur', function () {
+        document.querySelector('.header')?.classList.remove('open-mobile-search')
+    })
 
     function closeAllMenus() {
         document.querySelectorAll('.submenu.open').forEach(menu => {

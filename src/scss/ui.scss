@@ -22,7 +22,7 @@
 	align-items: center;
 	flex-shrink: 0;
 	font-weight: 500;
-	line-height: 120%;
+	line-height: 80%;
 	border-radius: 50%;
 	background: #f9851f;
 	color: #1b1b1b;
@@ -30,6 +30,7 @@
 	height: rem(10);
 	font-size: 0.5rem;
 	@media (min-width: $md1) {
+		line-height: 120%;
 		font-size: 0.75rem;
 		min-width: 1.1875rem;
 		height: 1.1875rem;
