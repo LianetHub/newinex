@@ -6,7 +6,7 @@
             @@include('html/_header.html', {})
             <main class="page">
                 <section class="promo">
-                    <div class="promo__container">
+                    <div class="container">
                         <div class="promo__slider swiper">
                             <div class="swiper-wrapper">
                                 <div class="promo__slide swiper-slide">
@@ -14,18 +14,62 @@
                                         <div class="promo__label">Специальное предложение</div>
                                         <h1 class="promo__title">Скидки 20% на все модели SRM-B-K</h1>
                                         <p class="promo__description">Текстовая зона нужна для SEO. Здесь краткий небольшой текст о предлагаемом оборудовании.</p>
-                                        <a href="" class="promo__btn btn btn-primary">Подробнее об акции</a>
+                                        <a href="" class="promo__btn btn btn-primary btn-lg">Подробнее об акции</a>
                                     </div>
                                     <div class="promo__image">
                                         <img src="@img/promo-product.png" alt="Фото товара">
                                     </div>
                                 </div>
+                                <div class="promo__slide swiper-slide">
+                                    <div class="promo__offer">
+                                        <div class="promo__label">Каталог электротехники</div>
+                                        <div class="promo__title">Устройства плавного пуска и частотные преобразователи</div>
+                                        <p class="promo__description">Широкий выбор оборудования для автоматизации. Решения для промышленности, энергетики и судостроения.</p>
+                                        <a href="" class="promo__btn btn btn-primary btn-lg">Перейти в каталог</a>
+                                    </div>
+                                    <div class="promo__image">
+                                        <img src="@img/promo-product.png" alt="Каталог оборудования">
+                                    </div>
+                                </div>
+                                <div class="promo__slide swiper-slide">
+                                    <div class="promo__offer">
+                                        <div class="promo__label">Наши услуги</div>
+                                        <div class="promo__title">Подбор, настройка и сопровождение</div>
+                                        <p class="promo__description">Поможем выбрать оборудование под ваши задачи, выполним пусконаладку и обеспечим техническую поддержку.</p>
+                                        <a href="" class="promo__btn btn btn-primary btn-lg">Подробнее об услугах</a>
+                                    </div>
+                                    <div class="promo__image">
+                                        <img src="@img/promo-product.png" alt="Иконка услуг">
+                                    </div>
+                                </div>
+                                <div class="promo__slide swiper-slide">
+                                    <div class="promo__offer">
+                                        <div class="promo__label">Надежность и качество</div>
+                                        <div class="promo__title">Гарантия до 3 лет на оборудование</div>
+                                        <p class="promo__description">Вся продукция проходит тщательное тестирование и сертификацию. Устройства NEWINEX работают на ведущих предприятиях страны.</p>
+                                        <a href="" class="promo__btn btn btn-primary btn-lg">Узнать о гарантии</a>
+                                    </div>
+                                    <div class="promo__image">
+                                        <img src="@img/promo-product.png" alt="Гарантия и сертификаты">
+                                    </div>
+                                </div>
+                                <div class="promo__slide swiper-slide">
+                                    <div class="promo__offer">
+                                        <div class="promo__label">Компания NEWINEX</div>
+                                        <div class="promo__title">Современные решения для автоматизации</div>
+                                        <p class="promo__description">Мы разрабатываем и поставляем оборудование для промышленных систем управления. Более 6 лет на рынке и десятки успешных проектов.</p>
+                                        <a href="" class="promo__btn btn btn-primary btn-lg">Подробнее о компании</a>
+                                    </div>
+                                    <div class="promo__image">
+                                        <img src="@img/promo-product.png" alt="О компании NEWINEX">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="promo__bottom">
-                                <button type="button" class="swiper-button-prev promo__prev icon-prev"></button>
-                                <div class="promo__pagination swiper-pagination"></div>
-                                <button type="button" class="swiper-button-next promo__next icon-next"></button>
-                            </div>
+                        </div>
+                        <div class="promo__bottom">
+                            <button type="button" class="swiper-button-prev promo__prev icon-prev"></button>
+                            <div class="promo__pagination swiper-pagination"></div>
+                            <button type="button" class="swiper-button-next promo__next icon-next"></button>
                         </div>
                     </div>
                 </section>
@@ -34,11 +78,7 @@
                         <h2 class="catalog__title title">Каталог электротехники</h2>
                         <div class="catalog__body">
                             <div class="row">
-                                <div class="col-4">
-                                    <div class="catalog__card">
-
-                                    </div>
-                                </div>
+                                @@loop('./html/templates/_catalog-card.html', './html/json/catalog.json')
                             </div>
                         </div>
                         <div class="catalog__footer seo-text">
@@ -64,9 +104,9 @@
                             </div>
                         </div>
                         <div class="products__btns">
-                            <a href="" class="products__btn btn btn-primary-outline">Все новинки</a>
-                            <a href="" class="products__btn btn btn-primary-outline">Все хиты продаж</a>
-                            <a href="" class="products__btn btn btn-primary-outline">Все акции</a>
+                            <a href="" class="products__btn btn btn-lg btn-primary-outline">Все новинки</a>
+                            <a href="" class="products__btn btn btn-lg btn-primary-outline">Все хиты продаж</a>
+                            <a href="" class="products__btn btn btn-lg btn-primary-outline">Все акции</a>
                         </div>
                         <div class="products__footer seo-text">
                             <p>Текстовая зона нужна для SEO. Здесь краткий небольшой текст о предлагаемом оборудовании. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -101,17 +141,30 @@
                                 </div>
                             </div>
                             <div class="col-5">
-                                <div class="about__licenses swiper">
-                                    <div class="swiper-wrapper">
-                                        <a href="@img/license.jpg" data-fancybox="licenses" class="licenses__slide swiper-slide">
-                                            <img src="@img/license.jpg" class="cover-image" alt="Фото">
-                                        </a>
-                                    </div>
-                                    <div class="about__licenses-controls">
-                                        <button type="button" class="swiper-button-prev about__licenses-prev icon-prev"></button>
-                                        <div class="about__licenses-pagination swiper-pagination"></div>
-                                        <button type="button" class="swiper-button-next about__licenses-next icon-next"></button>
-
+                                <div class="about__licenses">
+                                    <div class="about__licenses-slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <a href="@img/license.jpg" data-fancybox="licenses" class="about__licenses-slide swiper-slide">
+                                                <img src="@img/license.jpg" class="cover-image" alt="Фото">
+                                            </a>
+                                            <a href="@img/license.jpg" data-fancybox="licenses" class="about__licenses-slide swiper-slide">
+                                                <img src="@img/license.jpg" class="cover-image" alt="Фото">
+                                            </a>
+                                            <a href="@img/license.jpg" data-fancybox="licenses" class="about__licenses-slide swiper-slide">
+                                                <img src="@img/license.jpg" class="cover-image" alt="Фото">
+                                            </a>
+                                            <a href="@img/license.jpg" data-fancybox="licenses" class="about__licenses-slide swiper-slide">
+                                                <img src="@img/license.jpg" class="cover-image" alt="Фото">
+                                            </a>
+                                            <a href="@img/license.jpg" data-fancybox="licenses" class="about__licenses-slide swiper-slide">
+                                                <img src="@img/license.jpg" class="cover-image" alt="Фото">
+                                            </a>
+                                        </div>
+                                        <div class="about__licenses-controls">
+                                            <button type="button" class="swiper-button-prev about__licenses-prev icon-prev"></button>
+                                            <div class="about__licenses-pagination swiper-pagination"></div>
+                                            <button type="button" class="swiper-button-next about__licenses-next icon-next"></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

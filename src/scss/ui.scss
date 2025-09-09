@@ -4,17 +4,112 @@
 //============ МОДУЛИ ====================
 
 .title {
-	color: #244e52;
-	font-weight: 400;
-	line-height: 115%;
-	letter-spacing: -0.05rem;
-	font-size: 2rem;
-	@media (min-width: $md4) {
-		font-size: 2.5rem;
+	text-align: center;
+	font-size: 2.9375rem;
+	font-weight: 600;
+	line-height: 120%;
+}
+
+.quantity {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	font-size: 0.75rem;
+	font-weight: 500;
+	line-height: 120%;
+	border-radius: 50%;
+	background: #f9851f;
+	color: #1b1b1b;
+	min-width: 1.1875rem;
+	height: 1.1875rem;
+}
+
+.color-accent {
+	color: $accent;
+}
+
+.seo-text {
+	margin-top: rem(30);
+	color: #898989;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 140%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	&::after {
+		display: none;
 	}
-	& strong {
-		color: #1da7df;
-		font-weight: 800;
+	position: static;
+	left: auto;
+	right: auto;
+	bottom: auto;
+	top: auto;
+	margin: 0;
+	transform: none;
+	transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+	z-index: 2;
+	width: rem(50);
+	height: rem(22);
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #262626;
+	color: #fff;
+	border-radius: rem(50);
+
+	&.swiper-button-lock {
+		display: none;
+	}
+
+	&:disabled,
+	&.swiper-button-disabled,
+	&[aria-disabled="true"] {
+		pointer-events: none;
+		opacity: 0.7;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background: $accent;
+		}
+	}
+}
+
+.swiper-button-prev {
+	@extend %ic, .icon-prev;
+}
+.swiper-button-next {
+	@extend %ic, .icon-next;
+}
+
+.swiper-pagination {
+	&.swiper-pagination-bullets {
+		position: static;
+		z-index: 1;
+		margin: 0;
+		width: auto;
+		display: flex;
+		align-items: center;
+		.swiper-pagination-bullet {
+			min-width: rem(20);
+			height: rem(8);
+			border-radius: rem(30);
+			background: #262626;
+			opacity: 1;
+			transition: all 0.3s ease;
+			padding: 0 rem(10);
+
+			cursor: pointer;
+			&.swiper-pagination-bullet-active {
+				opacity: 1;
+				padding: 0 rem(20);
+				background: $accent;
+			}
+		}
 	}
 }
 
@@ -22,7 +117,7 @@
 
 // Стилизация скролла
 
-$scrollbarColor: #bae582;
+$scrollbarColor: $accent;
 
 ::-webkit-scrollbar {
 	width: rem(8);

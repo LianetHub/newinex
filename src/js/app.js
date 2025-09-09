@@ -13,6 +13,25 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener('click', (e) => {
         const target = e.target;
 
+
+        const header = document.querySelector('.header');
+        const catalogToggler = document.querySelector('.header__catalog-toggler');
+        const body = document.body;
+
+
+        if (target.closest('.header__catalog-toggler')) {
+            catalogToggler.classList.toggle('active');
+            header.classList.toggle('open-catalog');
+            body.classList.toggle('lock-catalog');
+            return;
+        }
+
+        if (header.classList.contains('open-catalog') && !target.closest('.header')) {
+            catalogToggler.classList.remove('active');
+            header.classList.remove('open-catalog');
+            body.classList.remove('lock-catalog');
+        }
+
         if (target.closest('.icon-menu') || target.classList.contains('header__menu')) {
             document.querySelector('.header').classList.toggle('open-menu');
         }
@@ -31,6 +50,10 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
+        if (target.matches('.product__compare')) {
+            target.classList.toggle('active')
+        }
+
 
     });
 
@@ -44,6 +67,44 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
+    }
+
+    // sliders
+
+    if (document.querySelector('.header__menu')) {
+        new Swiper('.header__menu', {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+
+        })
+    }
+
+    if (document.querySelector('.promo__slider')) {
+        new Swiper('.promo__slider', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: ".promo__next",
+                prevEl: ".promo__prev"
+            },
+            pagination: {
+                el: '.promo__pagination',
+                clickable: true
+            }
+        })
+    }
+
+    if (document.querySelector('.about__licenses-slider')) {
+        new Swiper('.about__licenses-slider', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: ".about__licenses-next",
+                prevEl: ".about__licenses-prev"
+            },
+            pagination: {
+                el: '.about__licenses-pagination',
+                clickable: true
+            }
+        })
     }
 
 

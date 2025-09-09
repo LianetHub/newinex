@@ -1,125 +1,152 @@
 .footer {
-	background: #fff;
-	padding: 2rem 0;
-	// .footer__wrapper
-	&__wrapper {
-		display: flex;
-		gap: 1rem;
-		flex-direction: column;
-		align-items: center;
-		@media (min-width: $md2) {
-			flex-direction: row;
-		}
-		@media (min-width: $md1) {
-			gap: 3.5rem;
+	background: #262626;
+	padding: rem(30) 0;
+	// .footer__body
+	&__body {
+		.row {
+			margin: 0 rem(-10);
+			row-gap: rem(20);
+			& > * {
+				padding: 0 rem(10);
+			}
 		}
 	}
 	// .footer__logo
 	&__logo {
+		max-width: 6.375rem;
+		width: 100%;
+		display: block;
+		& img {
+			width: 100%;
+		}
 	}
-	// .footer__body
-	&__body {
-		flex: 1 1 auto;
+	// .footer__btn
+	&__btn {
+		margin-top: 1.25rem;
+		&.btn.btn-sm {
+			padding-inline: 0.63rem;
+		}
+	}
+	// .footer__caption
+	&__caption {
+		display: flex;
+		align-items: center;
+		gap: 0.38rem;
+		&::before {
+			width: 1rem;
+			height: 1rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #f9851f;
+		}
 	}
 	// .footer__menu
 	&__menu {
-	}
-	// .footer__main
-	&__main {
-		margin-top: 0.75rem;
+		margin-top: 0.63rem;
 		display: flex;
-		gap: rem(10);
-		justify-content: center;
-		@media (min-width: $md2) {
-			justify-content: flex-start;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.5rem;
+		font-size: 0.875rem;
+		line-height: 140%;
+	}
+	// .footer__menu-item
+	&__menu-item {
+	}
+	// .footer__menu-link
+	&__menu-link {
+		transition: color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $accent;
+			}
 		}
-		@media (min-width: $md1) {
-			justify-content: space-between;
+	}
+	// .footer__contacts
+	&__contacts {
+		margin-top: 0.63rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.5rem;
+		font-size: 0.875rem;
+		line-height: 140%;
+	}
+	// .footer__contacts-link
+	&__contacts-link {
+		transition: color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $accent;
+			}
 		}
+	}
+	// .footer__contacts-qr
+	&__contacts-qr {
+		margin-top: 0.37rem;
 	}
 	// .footer__socials
 	&__socials {
-	}
-	// .footer__contact
-	&__contact {
-		color: #26414b;
-		font-size: 1.5rem;
-		font-weight: 700;
-		line-height: 1;
+		margin-top: 0.63rem;
 		display: flex;
-		align-items: center;
 		gap: rem(10);
-		&[href*="mailto:"] {
-			.footer__contact-text {
-				text-decoration: underline;
-			}
-		}
-		@media (any-hover: hover) {
-			&:hover {
-				.footer__contact-text {
-					text-decoration: none;
-					color: #1da7df;
-				}
-			}
-		}
 	}
-	// .footer__contact-icon
-	&__contact-icon {
-		width: 3.4375rem;
-		height: 3.4375rem;
+	// .footer__social
+	&__social {
+		width: 2.25rem;
+		height: 2.25rem;
+		font-size: 0.875rem;
 		flex-shrink: 0;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: #ebf5f5;
 		border-radius: 50%;
-	}
-	// .footer__contact-text
-	&__contact-text {
-		transition: color 0.3s ease;
-		@media (max-width: $md1) {
-			display: none;
+		background: #3b3b3b;
+		color: #f9851f;
+		transition: background-color 0.3s ease;
+		&::before {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: lighten($color: #3b3b3b, $amount: 10);
+			}
 		}
 	}
 	// .footer__bottom
 	&__bottom {
-		margin-top: 2.75rem;
-		padding: 1.5rem 0;
-		border-top: rem(1) solid #e0f4f4;
-		color: rgba(36, 78, 82, 0.8);
+		margin-top: 1.25rem;
+		border-top: rem(1) solid #3b3b3b;
+		padding: 1.25rem 0 0;
 		display: flex;
-		flex-direction: column;
+		justify-content: space-between;
 		align-items: center;
-		gap: 2rem;
-		text-align: center;
-		@media (min-width: $md5) {
-			line-height: 77.778%;
-			font-size: 1.125rem;
-		}
-		@media (min-width: $md2) {
-			text-align: left;
-			gap: 1rem;
-			justify-content: space-between;
-			flex-direction: row;
-			flex-wrap: wrap;
-		}
-	}
-	// .footer__policy
-	&__policy {
-		@media (any-hover: hover) {
-			&:hover {
-				text-decoration: underline;
-			}
-		}
+		color: #898989;
+		font-size: 0.75rem;
+		line-height: 120%;
 	}
 	// .footer__copyright
 	&__copyright {
 	}
-	// .footer__prod
-	&__prod {
+	// .footer__privacy
+	&__privacy {
+		transition: color 0.3s ease;
 		@media (any-hover: hover) {
 			&:hover {
-				text-decoration: underline;
+				color: $accent;
+			}
+		}
+	}
+	// .footer__prod
+	&__prod {
+		text-align: right;
+		transition: color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $accent;
 			}
 		}
 	}

@@ -1,46 +1,53 @@
 <header class="header">
     <div class="header__top">
         <div class="container">
-            <nav aria-label="Основное меню" class="header__menu menu">
-                <ul class="menu__list">
-                    <li class="menu__item menu__item--parent">
+            <nav aria-label="Основное меню" class="header__menu menu swiper">
+                <ul class="menu__list swiper-wrapper">
+                    <li class="swiper-slide menu__item menu__item--parent">
                         <a href="" class="menu__link">
                             О компании
                         </a>
                         <button type="button" class="menu__arrow icon-chevron-down"></button>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="" class="submenu__link">Подбор оборудования</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Настройка и запуск</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Техническое сопровождения</a></li>
-                        </ul>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li class="submenu__item"><a href="" class="submenu__link">Новости</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Сертификаты</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Отзывы</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Гарантии</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Блог</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Контакты</a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="menu__item menu__item--parent">
+                    <li class="swiper-slide menu__item menu__item--parent">
                         <a href="" class="menu__link">
                             Услуги
                         </a>
                         <button type="button" class="menu__arrow icon-chevron-down"></button>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="" class="submenu__link">Подбор оборудования</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Настройка и запуск</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Техническое сопровождения</a></li>
-                        </ul>
+                        <div class="submenu">
+                            <ul class="submenu__list">
+                                <li class="submenu__item"><a href="" class="submenu__link">Подбор оборудования</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Настройка и запуск</a></li>
+                                <li class="submenu__item"><a href="" class="submenu__link">Техническое сопровождения</a></li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="menu__item">
+                    <li class="swiper-slide menu__item">
                         <a href="" class="menu__link">
                             Оплата и доставка
                         </a>
                     </li>
-                    <li class="menu__item">
+                    <li class="swiper-slide menu__item">
                         <a href="" class="menu__link">
                             Гарантии
                         </a>
                     </li>
-                    <li class="menu__item">
+                    <li class="swiper-slide menu__item">
                         <a href="" class="menu__link">
                             Блог
                         </a>
                     </li>
-                    <li class="menu__item">
+                    <li class="swiper-slide menu__item">
                         <a href="" class="menu__link">
                             Контакты
                         </a>
@@ -57,7 +64,7 @@
                 </a>
                 <form action="#" class="header__search search">
                     <button type="button" aria-label="Искать" class="search__btn icon-search"></button>
-                    <input type="text" name="s" class="search__input">
+                    <input type="text" name="s" placeholder="Поиск" class="search__input">
                 </form>
                 <div class="header__socials">
                     <a href="" aria-label="telegram" class="header__social icon-telegram"></a>
@@ -77,50 +84,60 @@
                         <a href="mailto:sale@newinex.ru" class="header__contacts-link">sale@newinex.ru</a>
                     </div>
                 </div>
-                <a href="" class="header__selection btn-primary">Подобрать оборудование</a>
+                <a href="" class="header__selection btn btn-primary btn-sm">Подобрать оборудование</a>
             </div>
-        </div>
-        <div class="header__bottom">
-            <div class="header-catalog">
-                <button type="button" class="header-catalog__btn btn btn-primary">Каталог</button>
-                <div class="header-catalog__body">
-                    <ul class="header-catalog__list">
-                        <li class="header-catalog__item"><a href="" class="header-catalog__link">Устройства плавного пуска</a></li>
-                        <li class="header-catalog__item"><a href="" class="header-catalog__link">SRM-B-M - серия с расширенным функционалом</a></li>
-                        <li class="header-catalog__item"><a href="" class="header-catalog__link">SRM-B-A - компактная серия в алюминиевом корпусе</a></li>
-                        <li class="header-catalog__item"><a href="" class="header-catalog__link">SRM-B-M - серия с расширенным функционалом</a></li>
-                        <li class="header-catalog__item"><a href="" class="header-catalog__link">SRM-B-К - универсальное УПП</a></li>
-                    </ul>
-                    <ul class="header-catalog__list">
-                        <li class="header-catalog__item"><a href="" class="header-catalog__link">Частотные преобразователи</a></li>
-                        <li class="header-catalog__item"><a href="" class="header-catalog__link">DST - стандартная серия</a></li>
-                        <li class="header-catalog__item"><a href="" class="header-catalog__link">DST-K - серия с расширенным функционалом</a></li>
-                        <li class="header-catalog__item"><a href="" class="header-catalog__link">DST-KM - экономичная и компактная серия</a></li>
-                    </ul>
-                    <ul class="header-catalog__list">
-                        <li class="header-catalog__item"><a href="" class="header-catalog__link">Дополнительное оборудование</a></li>
-                        <li class="header-catalog__item"><a href="" class="header-catalog__link">ЭМС фильтры</a></li>
-                        <li class="header-catalog__item"><a href="" class="header-catalog__link">Тормозные резисторы</a></li>
-                    </ul>
+            <div class="header__bottom">
+                <button type="button" class="header__catalog-toggler btn btn-primary icon-align-left">Каталог</button>
+                <ul class="header__categories">
+                    <li class="header__category">
+                        <a href="" class="header__category-link">Устройства плавного пуска</a>
+                    </li>
+                    <li class="header__category">
+                        <a href="" class="header__category-link">Частотные преобразователи</a>
+                    </li>
+                    <li class="header__category">
+                        <a href="" class="header__category-link btn btn-primary-outline">Акции</a>
+                    </li>
+                    <li class="header__category">
+                        <a href="" class="header__category-link icon-comment-question">Помощь</a>
+                    </li>
+                </ul>
+                <div class="header__actions">
+                    <a href="" class="header__action btn btn-secondary icon-balance-scale">Сравнение</a>
+                    <a href="" class="header__action btn btn-secondary icon-shopping-cart">Корзина<span class="quantity">2</span></a>
                 </div>
             </div>
-            <ul class="header__categories">
-                <li class="header__category">
-                    <a href="" class="header__category-link">Устройства плавного пуска</a>
-                </li>
-                <li class="header__category">
-                    <a href="" class="header__category-link">Частотные преобразователи</a>
-                </li>
-                <li class="header__category">
-                    <a href="" class="header__category-link btn btn-primary-outline">Акции</a>
-                </li>
-                <li class="header__category">
-                    <a href="" class="header__category-link icon-comment-question">Помощь</a>
-                </li>
-            </ul>
-            <div class="header__actions">
-                <a href="" class="header__action btn btn-secondary icon-balance-scale">Сравнение</a>
-                <a href="" class="header__action btn btn-secondary icon-shopping-cart">Корзина<span class="quantity">2</span></a>
+        </div>
+    </div>
+    <div class="header-catalog">
+        <div class="container">
+            <div class="header-catalog__content">
+                <div class="row">
+                    <div class="col-4">
+                        <ul class="header-catalog__list">
+                            <li class="header-catalog__item"><a href="" class="header-catalog__link header-catalog__link--white">Устройства плавного пуска</a></li>
+                            <li class="header-catalog__item"><a href="" class="header-catalog__link">SRM-B-M - серия с расширенным функционалом</a></li>
+                            <li class="header-catalog__item"><a href="" class="header-catalog__link">SRM-B-A - компактная серия в алюминиевом корпусе</a></li>
+                            <li class="header-catalog__item"><a href="" class="header-catalog__link">SRM-B-M - серия с расширенным функционалом</a></li>
+                            <li class="header-catalog__item"><a href="" class="header-catalog__link">SRM-B-К - универсальное УПП</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul class="header-catalog__list">
+                            <li class="header-catalog__item"><a href="" class="header-catalog__link header-catalog__link--accent">Частотные преобразователи</a></li>
+                            <li class="header-catalog__item"><a href="" class="header-catalog__link">DST - стандартная серия</a></li>
+                            <li class="header-catalog__item"><a href="" class="header-catalog__link">DST-K - серия с расширенным функционалом</a></li>
+                            <li class="header-catalog__item"><a href="" class="header-catalog__link">DST-KM - экономичная и компактная серия</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul class="header-catalog__list">
+                            <li class="header-catalog__item"><a href="" class="header-catalog__link header-catalog__link--white">Дополнительное оборудование</a></li>
+                            <li class="header-catalog__item"><a href="" class="header-catalog__link">ЭМС фильтры</a></li>
+                            <li class="header-catalog__item"><a href="" class="header-catalog__link header-catalog__link--accent">Тормозные резисторы</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

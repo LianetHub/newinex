@@ -19,6 +19,7 @@
                     <div class="product__stats-property">Мощность:</div>
                     <div class="product__stats-value">@@power</div>
                 </li>
+                @@if (typeof amperage !== 'undefined') {
                 <li class="product__stats-item">
                     <div class="product__stats-icon">
                         <img src="@img/icons/amperage.svg" alt="Иконка">
@@ -26,6 +27,16 @@
                     <div class="product__stats-property">Ток:</div>
                     <div class="product__stats-value">@@amperage</div>
                 </li>
+                }
+                @@if (typeof resistance !== 'undefined') {
+                <li class="product__stats-item">
+                    <div class="product__stats-icon">
+                        <img src="@img/icons/amperage.svg" alt="Иконка">
+                    </div>
+                    <div class="product__stats-property">Сопротивление:</div>
+                    <div class="product__stats-value">@@resistance</div>
+                </li>
+                }
             </ul>
         </div>
         <div class="product__footer">

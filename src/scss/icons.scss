@@ -18,6 +18,12 @@
 	}
 }
 
+.icon-cross:before {
+	content: "\e910";
+}
+.icon-align-left:before {
+	content: "\e90f";
+}
 .icon-phone:before {
 	content: "\e90e";
 }

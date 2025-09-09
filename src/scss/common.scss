@@ -4,11 +4,30 @@ body {
 	min-width: rem($minWidth);
 	min-height: 100%;
 	line-height: normal;
-	background: url("@img/decor/pattern.png");
+	background: #1b1b1b;
+	color: #fff;
 	margin-right: 0 !important;
 	&:has(.header.open-menu) {
 		@media (max-width: $md2) {
 			overflow: hidden;
+		}
+	}
+	&.lock-catalog {
+		overflow: hidden;
+		.wrapper {
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #262626;
+				opacity: 0.7;
+				z-index: 5;
+				cursor: pointer;
+			}
 		}
 	}
 }
@@ -22,15 +41,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	overflow-x: clip;
-	background: #f6f8f9;
-	color: #244e52;
-	max-width: 1600px;
-	margin: 0 auto;
 }
 
 .page {
 	flex: 1 1 auto;
-	padding-top: 4.87rem;
 }
 
 // ================== ОБОЛОЧКА ===============================
@@ -41,26 +55,18 @@ body {
 	margin: 0 auto;
 	max-width: 100%;
 	padding: 0 rem(16);
-	@media (min-width: $md5) {
+	@media (min-width: $md4) {
 		box-sizing: content-box;
 		max-width: 540px;
 	}
-	@media (min-width: $md4) {
+	@media (min-width: $md3) {
 		max-width: 720px;
 	}
-	@media (min-width: $md3) {
+	@media (min-width: $md2) {
 		max-width: 960px;
 	}
-	@media (min-width: $md2) {
-		max-width: 1140px;
-	}
 	@media (min-width: $md1) {
-		max-width: 1366px;
-	}
-	&.container-lg {
-		@media (min-width: $md0) {
-			max-width: $maxWidthContainer;
-		}
+		max-width: 1200px;
 	}
 }
 
