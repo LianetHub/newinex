@@ -1,6 +1,11 @@
 .footer {
 	background: #262626;
-	padding: rem(30) 0;
+	margin-top: rem(40);
+	padding: rem(20) 0;
+	@media (min-width: $md3) {
+		padding: rem(30) 0;
+		margin-top: rem(60);
+	}
 	// .footer__body
 	&__body {
 		.row {
@@ -11,20 +16,38 @@
 			}
 		}
 	}
+	&__main {
+		display: flex;
+		gap: 1.25rem;
+		justify-content: space-between;
+		align-items: center;
+		@media (min-width: $md1) {
+			align-items: flex-start;
+			flex-direction: column;
+		}
+	}
 	// .footer__logo
 	&__logo {
-		max-width: 6.375rem;
 		width: 100%;
 		display: block;
+		max-width: rem(65);
+		@media (min-width: $md4) {
+			max-width: 6.375rem;
+		}
 		& img {
 			width: 100%;
 		}
 	}
 	// .footer__btn
 	&__btn {
-		margin-top: 1.25rem;
 		&.btn.btn-sm {
 			padding-inline: 0.63rem;
+			padding-block: rem(8);
+			min-height: rem(32);
+			@media (min-width: $md4) {
+				padding-block: rem(11);
+				min-height: rem(40);
+			}
 		}
 	}
 	// .footer__caption
@@ -32,6 +55,10 @@
 		display: flex;
 		align-items: center;
 		gap: 0.38rem;
+		font-size: 0.875rem;
+		@media (min-width: $md4) {
+			font-size: 1rem;
+		}
 		&::before {
 			width: 1rem;
 			height: 1rem;
@@ -122,11 +149,18 @@
 		border-top: rem(1) solid #3b3b3b;
 		padding: 1.25rem 0 0;
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
 		color: #898989;
 		font-size: 0.75rem;
 		line-height: 120%;
+		flex-direction: column;
+		text-align: center;
+		gap: rem(12);
+		@media (min-width: $md3) {
+			text-align: left;
+			justify-content: space-between;
+			flex-direction: row;
+		}
 	}
 	// .footer__copyright
 	&__copyright {
@@ -142,8 +176,17 @@
 	}
 	// .footer__prod
 	&__prod {
-		text-align: right;
 		transition: color 0.3s ease;
+		br {
+			display: none;
+		}
+		@media (min-width: $md3) {
+			text-align: right;
+			br {
+				display: block;
+			}
+		}
+
 		@media (any-hover: hover) {
 			&:hover {
 				color: $accent;

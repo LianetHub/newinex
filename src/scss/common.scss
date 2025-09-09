@@ -1,7 +1,7 @@
 body {
 	font-family: $fontfamily, sans-serif;
 	font-size: 1rem;
-	min-width: rem($minWidth);
+	min-width: rem(320);
 	min-height: 100%;
 	line-height: normal;
 	background: #1b1b1b;
@@ -54,7 +54,8 @@ body {
 .container {
 	margin: 0 auto;
 	max-width: 100%;
-	padding: 0 rem(16);
+	padding: 0 rem(20);
+	box-sizing: border-box;
 	@media (min-width: $md4) {
 		box-sizing: content-box;
 		max-width: 540px;

@@ -77,53 +77,61 @@
     </div>
     <div class="header__body">
         <div class="container">
-            <div class="header__main">
-                <a href="/" class="header__logo">
-                    <img src="img/logo.svg" alt="Логотип">
-                </a>
-                <form action="#" class="header__search search">
-                    <button type="button" aria-label="Искать" class="search__btn icon-search"></button>
-                    <input type="text" name="s" placeholder="Поиск" class="search__input">
-                </form>
-                <div class="header__socials">
-                    <a href="" aria-label="telegram" class="header__social icon-telegram"></a>
-                    <a href="" aria-label="whatsapp" class="header__social icon-whatsapp"></a>
+            <div class="header__content">
+                <div class="header__main">
+                    <a href="/" class="header__logo">
+                        <img src="img/logo.svg" alt="Логотип">
+                    </a>
+                    <form action="#" class="header__search search">
+                        <button type="button" aria-label="Искать" class="search__btn icon-search"></button>
+                        <input type="text" name="s" placeholder="Поиск" class="search__input">
+                    </form>
+                    <div class="header__socials">
+                        <a href="" aria-label="telegram" class="header__social icon-telegram"></a>
+                        <a href="" aria-label="whatsapp" class="header__social icon-whatsapp"></a>
+                    </div>
+                    <div class="header__contacts">
+                        <div class="header__contacts-block">
+                            <div class="header__contacts-caption">Бесплатно по РФ:</div>
+                            <a href="tel:+78007707289" class="header__contacts-link">+7 (800) 770-72-89</a>
+                        </div>
+                        <div class="header__contacts-block">
+                            <div class="header__contacts-caption">Санкт-Петербург:</div>
+                            <a href="tel:+78129820601" class="header__contacts-link">+7 (812) 982-06-01</a>
+                        </div>
+                        <div class="header__contacts-block">
+                            <div class="header__contacts-caption">Отдел продаж:</div>
+                            <a href="mailto:sale@newinex.ru" class="header__contacts-link">sale@newinex.ru</a>
+                        </div>
+                    </div>
+                    <a href="" class="header__selection btn btn-primary btn-sm">Подобрать оборудование</a>
                 </div>
-                <div class="header__contacts">
-                    <div class="header__contacts-block">
-                        <div class="header__contacts-caption">Бесплатно по РФ:</div>
-                        <a href="tel:+78007707289" class="header__contacts-link">+7 (800) 770-72-89</a>
+                <div class="header__bottom">
+                    <ul class="header__main-menu main-menu">
+                        <li class="main-menu__item">
+                            <button type="button" class="header__catalog-toggler btn btn-primary icon-align-left">Каталог</button>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="" class="main-menu__link">Устройства плавного пуска</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="" class="main-menu__link">Частотные преобразователи</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="" class="main-menu__link btn btn-primary-outline">Акции</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="" class="main-menu__link icon-comment-question">Помощь</a>
+                        </li>
+                    </ul>
+                    <div class="header__actions">
+                        <button type="button" aria-label="Открыть мобильный поиск" class="header__search-toggler icon-search"></button>
+                        <a href="" class="header__action btn btn-secondary icon-balance-scale"><span class="header__action-text">Сравнение</span></a>
+                        <a href="" class="header__action btn btn-secondary icon-shopping-cart"><span class="header__action-text">Корзина</span><span class="quantity">2</span></a>
+                        <button type="button" aria-label="Открыть мобильное меню" class="header__menu-toggler icon-menu">
+                            <span></span><span></span><span></span>
+                        </button>
                     </div>
-                    <div class="header__contacts-block">
-                        <div class="header__contacts-caption">Санкт-Петербург:</div>
-                        <a href="tel:+78129820601" class="header__contacts-link">+7 (812) 982-06-01</a>
-                    </div>
-                    <div class="header__contacts-block">
-                        <div class="header__contacts-caption">Отдел продаж:</div>
-                        <a href="mailto:sale@newinex.ru" class="header__contacts-link">sale@newinex.ru</a>
-                    </div>
-                </div>
-                <a href="" class="header__selection btn btn-primary btn-sm">Подобрать оборудование</a>
-            </div>
-            <div class="header__bottom">
-                <button type="button" class="header__catalog-toggler btn btn-primary icon-align-left">Каталог</button>
-                <ul class="header__categories">
-                    <li class="header__category">
-                        <a href="" class="header__category-link">Устройства плавного пуска</a>
-                    </li>
-                    <li class="header__category">
-                        <a href="" class="header__category-link">Частотные преобразователи</a>
-                    </li>
-                    <li class="header__category">
-                        <a href="" class="header__category-link btn btn-primary-outline">Акции</a>
-                    </li>
-                    <li class="header__category">
-                        <a href="" class="header__category-link icon-comment-question">Помощь</a>
-                    </li>
-                </ul>
-                <div class="header__actions">
-                    <a href="" class="header__action btn btn-secondary icon-balance-scale">Сравнение</a>
-                    <a href="" class="header__action btn btn-secondary icon-shopping-cart">Корзина<span class="quantity">2</span></a>
                 </div>
             </div>
         </div>
@@ -169,7 +177,7 @@
                                 <div class="promo__slide swiper-slide">
                                     <div class="promo__offer">
                                         <div class="promo__label">Специальное предложение</div>
-                                        <h1 class="promo__title">Скидки 20% на все модели SRM-B-K</h1>
+                                        <h1 class="promo__title">Скидки 20% на&nbsp;все модели SRM-B-K</h1>
                                         <p class="promo__description">Текстовая зона нужна для SEO. Здесь краткий небольшой текст о предлагаемом оборудовании.</p>
                                         <a href="" class="promo__btn btn btn-primary btn-lg">Подробнее об акции</a>
                                     </div>
@@ -235,7 +243,7 @@
                         <h2 class="catalog__title title">Каталог электротехники</h2>
                         <div class="catalog__body">
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-xl-4 col-md-6">
     <div class="catalog__card">
         <div class="catalog__card-icon">
             <img src="img/icons/wrench-grey.svg" alt="Иконка">
@@ -259,7 +267,7 @@
             <a href="" class="catalog__card-btn icon-next"></a>
         </div>
     </div>
-</div><div class="col-4">
+</div><div class="col-xl-4 col-md-6">
     <div class="catalog__card">
         <div class="catalog__card-icon">
             <img src="img/icons/flip-h-alt.svg" alt="Иконка">
@@ -282,7 +290,7 @@
             <a href="" class="catalog__card-btn icon-next"></a>
         </div>
     </div>
-</div><div class="col-4">
+</div><div class="col-xl-4 col-md-6">
     <div class="catalog__card">
         <div class="catalog__card-icon">
             <img src="img/icons/wrench-grey.svg" alt="Иконка">
@@ -316,17 +324,17 @@
                     <div class="container">
                         <div class="benefits__body">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-xl-3 col-md-6">
     <div class="benefits__card">
         <div class="benefits__card-header">
             <div class="benefits__card-icon">
                 <img src="img/icons/user-check.svg" alt="Иконка">
             </div>
-            <div class="benefits__card-caption">Мы вас слышим и&nbsp;готовы помочь</div>
+            <div class="benefits__card-caption">Мы вас слышим <br> и готовы помочь</div>
         </div>
         <div class="benefits__card-description">Всегда заинтересованы решить вашу задачу в рамках заданного бюджета</div>
     </div>
-</div><div class="col-3">
+</div><div class="col-xl-3 col-md-6">
     <div class="benefits__card">
         <div class="benefits__card-header">
             <div class="benefits__card-icon">
@@ -334,19 +342,19 @@
             </div>
             <div class="benefits__card-caption">Профессиональная поддержка</div>
         </div>
-        <div class="benefits__card-description">Оперативно отвечаем на вопросы при подключении или работе техники</div>
+        <div class="benefits__card-description">Оперативно отвечаем на вопросы при&nbsp;подключении или работе техники</div>
     </div>
-</div><div class="col-3">
+</div><div class="col-xl-3 col-md-6">
     <div class="benefits__card">
         <div class="benefits__card-header">
             <div class="benefits__card-icon">
                 <img src="img/icons/award.svg" alt="Иконка">
             </div>
-            <div class="benefits__card-caption">Гарантия на технику до 3 лет</div>
+            <div class="benefits__card-caption">Гарантия на технику <br> до 3 лет</div>
         </div>
         <div class="benefits__card-description">Вся наша продукция сертифицирована и проходит тщательное тестирование</div>
     </div>
-</div><div class="col-3">
+</div><div class="col-xl-3 col-md-6">
     <div class="benefits__card">
         <div class="benefits__card-header">
             <div class="benefits__card-icon">
@@ -366,7 +374,7 @@
                         <h2 class="products__title title">Новинки, акции и популярные товары</h2>
                         <div class="products__body">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-xl-3 col-lg-4 col-md-6">
     <div class="product" id="9000001">
         <div class="product__header">
             <div class="product__header-row">
@@ -404,7 +412,7 @@
             <button type="button" class="product__add-to-cart btn btn-primary">В корзину</button>
         </div>
     </div>
-</div><div class="col-3">
+</div><div class="col-xl-3 col-lg-4 col-md-6">
     <div class="product" id="9000002">
         <div class="product__header">
             <div class="product__header-row">
@@ -442,7 +450,7 @@
             <button type="button" class="product__add-to-cart btn btn-primary">В корзину</button>
         </div>
     </div>
-</div><div class="col-3">
+</div><div class="col-xl-3 col-lg-4 col-md-6">
     <div class="product" id="9000003">
         <div class="product__header">
             <div class="product__header-row">
@@ -480,7 +488,7 @@
             <button type="button" class="product__add-to-cart btn btn-primary">В корзину</button>
         </div>
     </div>
-</div><div class="col-3">
+</div><div class="col-xl-3 col-lg-4 col-md-6">
     <div class="product" id="9000004">
         <div class="product__header">
             <div class="product__header-row">
@@ -518,7 +526,7 @@
             <button type="button" class="product__add-to-cart btn btn-primary">В корзину</button>
         </div>
     </div>
-</div><div class="col-3">
+</div><div class="col-xl-3 col-lg-4 col-md-6">
     <div class="product" id="9000005">
         <div class="product__header">
             <div class="product__header-row">
@@ -556,7 +564,7 @@
             <button type="button" class="product__add-to-cart btn btn-primary">В корзину</button>
         </div>
     </div>
-</div><div class="col-3">
+</div><div class="col-xl-3 col-lg-4 col-md-6">
     <div class="product" id="9000006">
         <div class="product__header">
             <div class="product__header-row">
@@ -594,7 +602,7 @@
             <button type="button" class="product__add-to-cart btn btn-primary">В корзину</button>
         </div>
     </div>
-</div><div class="col-3">
+</div><div class="col-xl-3 col-lg-4 col-md-6">
     <div class="product" id="9000007">
         <div class="product__header">
             <div class="product__header-row">
@@ -632,7 +640,7 @@
             <button type="button" class="product__add-to-cart btn btn-primary">В корзину</button>
         </div>
     </div>
-</div><div class="col-3">
+</div><div class="col-xl-3 col-lg-4 col-md-6">
     <div class="product" id="9000008">
         <div class="product__header">
             <div class="product__header-row">
@@ -688,7 +696,7 @@
                         <h2 class="services__title title">Наши услуги</h2>
                         <div class="services__body">
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-lg-4 col-md-6">
     <div class="services__card">
         <div class="services__card-header">
             <div class="services__card-icon">
@@ -699,7 +707,7 @@
         <p class="services__card-description">Подбираем оборудование под ваши задачи. В том числе подбор по аналогам.</p>
         <a href="" class="services__card-btn btn btn-primary icon-next">Подробнее</a>
     </div>
-</div><div class="col-4">
+</div><div class="col-lg-4 col-md-6">
     <div class="services__card">
         <div class="services__card-header">
             <div class="services__card-icon">
@@ -710,7 +718,7 @@
         <p class="services__card-description">Настраиваем и запускаем технику в соответствии с актуальными регламентами.</p>
         <a href="" class="services__card-btn btn btn-primary icon-next">Подробнее</a>
     </div>
-</div><div class="col-4">
+</div><div class="col-lg-4 col-md-6">
     <div class="services__card">
         <div class="services__card-header">
             <div class="services__card-icon">
@@ -729,7 +737,7 @@
                 <section class="about">
                     <div class="container">
                         <div class="row">
-                            <div class="col-7">
+                            <div class="col-xl-7 col-lg-6">
                                 <h2 class="about__title title">
                                     Компания <span class="color-accent">NEWINEX</span>
                                 </h2>
@@ -743,7 +751,7 @@
                                     <p>Все специалисты NEWINEX имеют опыт работы  и профильное инженерное образование. На собственном производстве мы обеспечиваем стендовые проверки каждого компонента. Вся продукция сертифицирована в соответствии с требованиями ЕЭС.</p>
                                 </div>
                             </div>
-                            <div class="col-5">
+                            <div class="col-xl-5 col-lg-6">
                                 <div class="about__licenses">
                                     <div class="about__licenses-slider swiper">
                                         <div class="swiper-wrapper">
@@ -779,13 +787,15 @@
     <div class="container">
         <div class="footer__body">
             <div class="row">
-                <div class="col-2">
-                    <a href="/" class="footer__logo">
-                        <img src="img/logo.svg" alt="Логотип">
-                    </a>
-                    <a href="" class="footer__btn btn btn-primary btn-sm">Подобрать оборудование</a>
+                <div class="col-xl-2 col-12">
+                    <div class="footer__main">
+                        <a href="/" class="footer__logo">
+                            <img src="img/logo.svg" alt="Логотип">
+                        </a>
+                        <a href="" class="footer__btn btn btn-primary btn-sm">Подобрать оборудование</a>
+                    </div>
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                     <div class="footer__caption icon-align">Каталог</div>
                     <ul class="footer__menu">
                         <li class="footer__menu-item"><a href="" class="footer__menu-link">Устройства плавного пуска</a></li>
@@ -796,7 +806,7 @@
                         <li class="footer__menu-item"><a href="" class="footer__menu-link">Акции</a></li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                     <div class="footer__caption icon-book-open">Услуги</div>
                     <ul class="footer__menu">
                         <li class="footer__menu-item"><a href="" class="footer__menu-link">Подбор оборудования</a></li>
@@ -805,7 +815,7 @@
                         <li class="footer__menu-item"><a href="" class="footer__menu-link">Оплата и доставка</a></li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                     <div class="footer__caption icon-window-restore">О компании</div>
                     <ul class="footer__menu">
                         <li class="footer__menu-item"><a href="" class="footer__menu-link">Новости</a></li>
@@ -816,7 +826,7 @@
                         <li class="footer__menu-item"><a href="" class="footer__menu-link">Контакты</a></li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                     <div class="footer__caption icon-comment-question">Тех.поддержка</div>
                     <div class="footer__contacts">
                         <a href="mailto:support@newinex.ru" class="footer__contacts-link">support@newinex.ru</a>
@@ -826,7 +836,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                     <div class="footer__caption icon-phone">Контакты</div>
                     <div class="footer__contacts">
                         <a href="tel:+78007707289" class="footer__contacts-link">+7 (800) 770-72-89</a>
@@ -853,114 +863,6 @@
         </div>
     </div>
 </footer>
-            <div id="start" class="popup">
-    <h2 class="popup__title title">С чего начать?</h2>
-    <p class="popup__description">Оставьте свои контактные данные, и мы свяжемся с вами, чтобы обсудить, как мы можем помочь вашему ребенку.</p>
-    <form action="#" class="popup__form form">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form__field">
-                    <label for="full_name" class="form__label">Ваше имя:</label>
-                    <input type="text" name="full_name" id="full_name" class="form__control" placeholder="Иван" required>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="form__field">
-                    <label for="phone" class="form__label">Телефон*:</label>
-                    <input type="tel" name="phone" id="phone" class="form__control" placeholder="+7 (___) ___-__-__" required>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form__field">
-                    <label for="message" class="form__label">Коротко опишите вашу ситуацию или задайте вопрос:</label>
-                    <textarea name="message" id="message" class="form__control" rows="4" placeholder="Например: 'У нас задержка развития речи...'"></textarea>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form__field">
-                    <label for="contact_time" class="form__label">Удобные часы для связи:</label>
-                    <select name="contact_time" id="contact_time" class="form__control">
-                        <option value="any">В любое время</option>
-                        <option value="morning">Утро (9:00 - 12:00)</option>
-                        <option value="afternoon">День (12:00 - 17:00)</option>
-                        <option value="evening">Вечер (17:00 - 20:00)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form__field">
-                    <label class="form__checkbox">
-                        <input type="checkbox" name="agree" class="form__checkbox-input hidden" id="agree_terms" required>
-                        <span class="form__checkbox-text">Я даю согласие на <a href="/privacy-policy.html" target="_blank">обработку персональных данных</a></span>
-                    </label>
-                </div>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="form__btn btn btn-primary">Отправить заявку</button>
-            </div>
-        </div>
-    </form>
-</div>
-<div id="contact" class="popup">
-    <h2 class="popup__title title">Связаться</h2>
-    <p class="popup__description">Оставьте свои контактные данные, и мы ответим на все ваши вопросы.</p>
-    <form action="#" class="popup__form form">
-        <div class="row">
-            <div class="col-6">
-                <div class="form__field">
-                    <label for="full_name" class="form__label">Ваше имя:</label>
-                    <input type="text" name="full_name" id="full_name" class="form__control" placeholder="Иван" required>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="form__field">
-                    <label for="phone" class="form__label">Телефон*:</label>
-                    <input type="tel" name="phone" id="phone" class="form__control" placeholder="+7 (___) ___-__-__" required>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form__field">
-                    <label for="message" class="form__label">Коротко опишите вашу ситуацию или задайте вопрос:</label>
-                    <textarea name="message" id="message" class="form__control" rows="4" placeholder="Например: 'Хочу записаться на АВА-терапию...'"></textarea>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form__field">
-                    <label for="contact_method" class="form__label">Удобный способ связи:</label>
-                    <select name="contact_method" id="contact_method" class="form__control">
-                        <option value="phone">Телефон</option>
-                        <option value="telegram">Telegram</option>
-                        <option value="whatsapp">WhatsApp</option>
-                        <option value="vk">ВКонтакте</option>
-                        <option value="email">E-mail</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form__field">
-                    <label for="contact_time" class="form__label">Удобные часы для связи:</label>
-                    <select name="contact_time" id="contact_time" class="form__control">
-                        <option value="any">В любое время</option>
-                        <option value="morning">Утро (9:00 - 12:00)</option>
-                        <option value="afternoon">День (12:00 - 17:00)</option>
-                        <option value="evening">Вечер (17:00 - 20:00)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form__field">
-                    <label class="form__checkbox">
-                        <input type="checkbox" name="agree" class="form__checkbox-input hidden" id="agree_terms" required>
-                        <span class="form__checkbox-text">Я даю согласие на <a href="/privacy-policy.html" target="_blank">обработку персональных данных</a></span>
-                    </label>
-                </div>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="form__btn btn btn-primary">Отправить</button>
-            </div>
-        </div>
-    </form>
-</div>
             <!-- plugins -->
 <script src="js/libs/fancybox.umd.js"></script>
 <script src="js/libs/swiper-bundle.min.js"></script>

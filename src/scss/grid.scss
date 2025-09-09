@@ -212,7 +212,7 @@
 		flex: 0 0 auto;
 	}
 }
-@media (min-width: 580px) {
+@media (min-width: $md4) {
 	.col-sm-1 {
 		max-width: 8.33333333%;
 		-ms-flex: 0 0 8.33333333%;
@@ -274,7 +274,7 @@
 		flex: 0 0 auto;
 	}
 }
-@media (min-width: 768px) {
+@media (min-width: $md3) {
 	.col-md-1 {
 		max-width: 8.33333333%;
 		-ms-flex: 0 0 8.33333333%;
@@ -336,7 +336,7 @@
 		flex: 0 0 auto;
 	}
 }
-@media (min-width: 992px) {
+@media (min-width: $md2) {
 	.col-lg-1 {
 		max-width: 8.33333333%;
 		-ms-flex: 0 0 8.33333333%;
@@ -403,7 +403,7 @@
 		flex: 0 0 auto;
 	}
 }
-@media (min-width: 1200px) {
+@media (min-width: $md1) {
 	.col-xl-1 {
 		max-width: 8.33333333%;
 		-ms-flex: 0 0 8.33333333%;

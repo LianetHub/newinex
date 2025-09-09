@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        if (header.classList.contains('open-catalog') && !target.closest('.header')) {
+        if (header?.classList.contains('open-catalog') && !target.closest('.header')) {
             catalogToggler.classList.remove('active');
             header.classList.remove('open-catalog');
             body.classList.remove('lock-catalog');
@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (document.querySelector('.promo__slider')) {
         new Swiper('.promo__slider', {
             slidesPerView: 1,
+            spaceBetween: 20,
             navigation: {
                 nextEl: ".promo__next",
                 prevEl: ".promo__prev"
