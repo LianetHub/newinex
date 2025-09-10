@@ -25,6 +25,8 @@
 	}
 	// .header__content
 	&__content {
+		position: relative;
+		z-index: 1;
 		flex-direction: row;
 		display: flex;
 		padding: 0.75rem 0 rem(20);
